@@ -1,8 +1,8 @@
 package kr.irumdev.ratatouille.api.service;
 
+import kr.irumdev.ratatouille.api.code.ErrorCode;
 import kr.irumdev.ratatouille.api.dto.RecipeDto;
 import kr.irumdev.ratatouille.api.entity.Recipe;
-import kr.irumdev.ratatouille.api.exception.ErrorCode;
 import kr.irumdev.ratatouille.api.exception.BaseException;
 import kr.irumdev.ratatouille.api.repository.RecipeRepository;
 import lombok.AllArgsConstructor;
@@ -21,6 +21,6 @@ public class RecipeService {
 
     private Recipe getRecipeBySeq(Integer recipeSeq) {
         return recipeRepository.findBySeq(recipeSeq)
-                .orElseThrow(() -> new BaseException(ErrorCode.INTERNAL_SERVER_ERROR));
+                .orElseThrow(() -> new BaseException(ErrorCode.NO_RECIPE));
     }
 }

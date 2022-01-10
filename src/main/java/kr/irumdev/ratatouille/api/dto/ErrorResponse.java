@@ -1,6 +1,6 @@
 package kr.irumdev.ratatouille.api.dto;
 
-import kr.irumdev.ratatouille.api.exception.ErrorCode;
+import kr.irumdev.ratatouille.api.code.ErrorCode;
 import lombok.*;
 
 @Getter
