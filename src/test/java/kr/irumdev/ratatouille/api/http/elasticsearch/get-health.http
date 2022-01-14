@@ -1,0 +1,4 @@
+# 클러스터 상태를 확인
+GET /_cat/health?v HTTP/1.1
+Authorization: Basic {{basic}}
+Host: {{host}}:9200

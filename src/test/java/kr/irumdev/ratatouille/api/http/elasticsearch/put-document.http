@@ -1,0 +1,14 @@
+# 도큐멘트 생성 or 수정
+PUT /ratatouille/recipes/1 HTTP/1.1
+Authorization: Basic {{basic}}
+Content-Type: application/json
+Host: {{host}}:9200
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "id": 6970472,
+    "type": "재료",
+    "name": "노르웨이생물고등어",
+    "volume": "1마리"
+}

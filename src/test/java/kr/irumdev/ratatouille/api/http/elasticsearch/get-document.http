@@ -1,0 +1,4 @@
+# 도큐먼트 조회
+GET /ratatouille/recipes/1?pretty HTTP/1.1
+Authorization: Basic {{basic}}
+Host: {{host}}:9200

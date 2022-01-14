@@ -1,0 +1,4 @@
+# 모든 색인 나열
+GET /_cat/indices?v HTTP/1.1
+Authorization: Basic {{basic}}
+Host: {{host}}:9200
