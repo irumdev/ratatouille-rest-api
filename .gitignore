@@ -39,3 +39,4 @@ out/
 ### Environment Variables ###
 **/src/main/resources/application-local.yml
 **/src/main/resources/application-production.yml
+**/src/main/resources/http-client.env.json
